@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+body > header {
+    background-color: #065e71;
+    color: #ffffff;
+    margin: 0px;
+    padding: 20px 20px 5px 20px;
+}
+
+body > header a, body > header a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body > header > h1 {
+    margin: 0px 0px 20px 0px;
+    font-weight: 100;
+    font-size: 4em;
+}
+
+aside.bio-info {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+aside.bio-info > div {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 30px;
+}
+
+aside.bio-info > div > p {
+    display: inline;
+}
+
+.address-unit-number::after, .street-name::after, .suburb::after {
+    content: ", "
+}
+
+main {
+    display: block;
+    float: left;
+    margin: 0px;
+    margin-left: -1px;
+    width: 50%;
+    border-left: 1px solid #ededed;
+}
+
+main > section {
+    padding: 50px 50px 0px 50px;
+}
+
+div.career-entry {
+    margin-left: 120px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-left: 5px solid #065e71;
+}
+
+div.career-entry > span.entry-time {
+    margin-left: -140px;
+    float: left;
+
+    background-color: #065e71;
+    color: #ffffff;
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+span.organisation {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+span.job-title {
+    display: block;
+    color: rgb(75, 75, 75);
+    font-style: italic;
+}
+
+div.career-entry ol {
+    margin: 0px;
+}

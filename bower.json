@@ -1,0 +1,27 @@
+{
+  "name": "resume",
+  "homepage": "http://resume.hongbin.id.au/",
+  "authors": [
+    "Ben Hu <benhongh@hotmail.com>"
+  ],
+  "description": "Hongbin Hu's resume",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Hongbin",
+    "Hu",
+    "resume"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
