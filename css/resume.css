@@ -21,12 +21,14 @@ body > header a, body > header a:hover {
 body > header > h1 {
     margin: 0px 0px 20px 0px;
     font-weight: 100;
-    font-size: 4em;
+    font-size: 5em;
+    text-align: center;
 }
 
 aside.bio-info {
     font-size: 0.8em;
     font-weight: 100;
+    text-align: center;
 }
 
 aside.bio-info > div {
@@ -46,14 +48,22 @@ aside.bio-info > div > p {
 main {
     display: block;
     float: left;
-    margin: 0px;
-    margin-left: -1px;
+    margin: 50px 0px 0px 0px;
     width: 50%;
-    border-left: 1px solid #ededed;
 }
 
 main > section {
-    padding: 50px 50px 0px 50px;
+    padding: 0px 50px 50px 50px;
+}
+
+main > section > h2 {
+    font-size: 3em;
+    font-weight: 100;
+    margin: 0px 0px 20px 0px;
+}
+
+main > section#career > h2 {
+    margin-left: 140px;
 }
 
 div.career-entry {
@@ -90,4 +100,10 @@ span.job-title {
 
 div.career-entry ol {
     margin: 0px;
+}
+
+body > footer {
+    clear: both;
+    text-align: center;
+    font-weight: 300;
 }
