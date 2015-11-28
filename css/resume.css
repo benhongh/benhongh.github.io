@@ -47,22 +47,32 @@ aside.bio-info > div > p {
 
 main {
     display: block;
-    float: left;
     margin: 50px 0px 0px 0px;
-    width: 50%;
+    text-align: center;
 }
 
-main > section {
-    padding: 0px 50px 50px 50px;
+main > div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 0px 25px 0px 25px;
 }
 
-main > section > h2 {
+main section {
+    padding: 0px 50px 50px 0px;
+}
+
+main section#career {
+}
+
+main section > h2 {
     font-size: 3em;
     font-weight: 100;
     margin: 0px 0px 20px 0px;
+    color: #065e71;
 }
 
-main > section#career > h2 {
+main section#career > h2 {
     margin-left: 140px;
 }
 
