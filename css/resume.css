@@ -56,18 +56,7 @@ header > figure > img {
 }
 
 main {
-    display: block;
-    margin: 50px 0px 0px 0px;
-    text-align: center;
-}
-
-main > div {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 0px 25px 0px 25px;
-
-    max-width: 45%;
+    margin-top: 50px;
 }
 
 main section {
@@ -95,7 +84,7 @@ div.career-entry {
     border-left: 5px solid #065e71;
 }
 
-div.career-entry > span.entry-time {
+div.career-entry  aside {
     margin-left: -140px;
     float: left;
 
@@ -110,7 +99,7 @@ div.career-entry > span.entry-time {
 }
 
 span.organisation {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -132,6 +121,11 @@ div.career-entry ol > li, div.career-entry ul > li {
 div.career-entry em {
     font-style: normal;
     font-weight: bold;
+}
+
+span.institution {
+    font-size: 1.2em;
+    display: block;
 }
 
 body > footer {
