@@ -175,7 +175,6 @@ div.education-entry ul > li::before {
 div.career-entry em,
 div.education-entry em {
     font-style: normal;
-    font-weight: bold;
 }
 
 span.institution {
