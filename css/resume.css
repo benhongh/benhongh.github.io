@@ -45,6 +45,16 @@ aside.bio-info > div > p {
     content: ", "
 }
 
+header > figure {
+    float: left;
+    padding: 2px;
+    background-color: #ffffff;
+}
+
+header > figure > img {
+    width: 80px;
+}
+
 main {
     display: block;
     margin: 50px 0px 0px 0px;
@@ -56,6 +66,8 @@ main > div {
     vertical-align: top;
     text-align: left;
     margin: 0px 25px 0px 25px;
+
+    max-width: 45%;
 }
 
 main section {
@@ -108,8 +120,18 @@ span.job-title {
     font-style: italic;
 }
 
-div.career-entry ol {
+div.career-entry ol, div.career-entry ul {
     margin: 0px;
+    list-style: circle;
+}
+
+div.career-entry ol > li, div.career-entry ul > li {
+    margin-bottom: 5px;
+}
+
+div.career-entry em {
+    font-style: normal;
+    font-weight: bold;
 }
 
 body > footer {
