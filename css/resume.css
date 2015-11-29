@@ -9,11 +9,11 @@ body > header {
     background-color: #065e71;
     color: #ffffff;
     margin: 0px;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 0px 0px 0px;
 }
 
 body > header a, body > header a:hover {
-    color: #ffffff;
+    color: #065e71;
     text-decoration: none;
     cursor: pointer;
 }
@@ -26,15 +26,39 @@ body > header > h1 {
 }
 
 aside.bio-info {
-    font-size: 0.8em;
-    font-weight: 100;
+    font-size: 1em;
+    font-weight: 300;
     text-align: center;
+
+    /*background-color: #f1f1f1;*/
+    background-color: white;
+    color: #065e71;
 }
 
 aside.bio-info > div {
     display: inline-block;
     vertical-align: text-top;
-    margin-right: 30px;
+}
+
+aside.bio-info > div::before {
+    content: "*";
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    font-size: 0.1em;
+    background-color: #065e71;
+    color: #065e71;
+    line-height: 6px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+aside.bio-info > div:first-child::before {
+    content: "";
+    display: none;
 }
 
 aside.bio-info > div > p {
@@ -73,18 +97,20 @@ main section > h2 {
     color: #065e71;
 }
 
-main section#career > h2 {
+main section#career > h2, main section#education > h2 {
     margin-left: 140px;
 }
 
-div.career-entry {
+div.career-entry,
+div.education-entry {
     margin-left: 120px;
     padding-left: 20px;
     padding-bottom: 20px;
     border-left: 5px solid #065e71;
 }
 
-div.career-entry  aside {
+div.career-entry  aside ,
+div.education-entry aside {
     margin-left: -140px;
     float: left;
 
@@ -110,18 +136,27 @@ span.job-title, span.degree {
     font-style: italic;
 }
 
-div.career-entry ol, div.career-entry ul {
+div.career-entry ol,
+div.career-entry ul,
+div.education-entry ol,
+div.education-entry ul {
     margin: 20px 0px 20px 0px;
 
     list-style: none;
     padding-left: 5px;
 }
 
-div.career-entry ol > li, div.career-entry ul > li {
+div.career-entry ol > li,
+div.career-entry ul > li,
+div.education-entry ol > li,
+div.education-entry ul > li {
     margin-bottom: 10px;
 }
 
-div.career-entry ol > li::before, div.career-entry ul > li::before {
+div.career-entry ol > li::before,
+div.career-entry ul > li::before,
+div.education-entry ol > li::before,
+div.education-entry ul > li::before {
     width: 19px;
     height: 19px;
     border-radius: 10px;
@@ -132,12 +167,13 @@ div.career-entry ol > li::before, div.career-entry ul > li::before {
     display: block;
     float: left;
     font-size: 0.5em;
-    color: #065e71;
-    background-color: #065e71;
-
+    color: #ffffff;
+    background-color: #ffffff;
+    border: 4px solid #065e71;
 }
 
-div.career-entry em {
+div.career-entry em,
+div.education-entry em {
     font-style: normal;
     font-weight: bold;
 }
@@ -163,12 +199,31 @@ ul.skill-list > li {
 }
 
 ul.skill-list > li em{
+    font-family: Arial Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
+}
+
+p.referee {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #065e71;
+
+    margin-top: 20px;
+}
+
+p.referee-title {
+    color: #7a7a7a;
+    font-style: italic;
 }
 
 body > footer {
     clear: both;
     text-align: center;
     font-weight: 300;
+}
+
+.marked-off {
+    background-color: black;
+    color: black;
 }
