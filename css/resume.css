@@ -98,24 +98,43 @@ div.career-entry  aside {
     border-radius: 10px 0px 0px 10px;
 }
 
-span.organisation {
+span.organisation, span.institution {
     font-size: 1.2em;
     font-weight: bold;
+    color: #065e71;
 }
 
-span.job-title {
+span.job-title, span.degree {
     display: block;
-    color: rgb(75, 75, 75);
+    color: #7a7a7a;
     font-style: italic;
 }
 
 div.career-entry ol, div.career-entry ul {
-    margin: 0px;
-    list-style: disc;
+    margin: 20px 0px 20px 0px;
+
+    list-style: none;
+    padding-left: 5px;
 }
 
 div.career-entry ol > li, div.career-entry ul > li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+div.career-entry ol > li::before, div.career-entry ul > li::before {
+    width: 19px;
+    height: 19px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: -38px;
+    content: "+";
+    display: block;
+    float: left;
+    font-size: 0.5em;
+    color: #065e71;
+    background-color: #065e71;
+
 }
 
 div.career-entry em {
@@ -126,6 +145,26 @@ div.career-entry em {
 span.institution {
     font-size: 1.2em;
     display: block;
+}
+
+p.skill-set {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #065e71;
+}
+
+ul.skill-list {
+    padding: 0px;
+    list-style: none;
+}
+
+ul.skill-list > li {
+    margin-bottom: 15px;
+}
+
+ul.skill-list > li em{
+    font-style: normal;
+    font-weight: bold;
 }
 
 body > footer {
