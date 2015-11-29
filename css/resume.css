@@ -111,7 +111,7 @@ span.job-title {
 
 div.career-entry ol, div.career-entry ul {
     margin: 0px;
-    list-style: circle;
+    list-style: disc;
 }
 
 div.career-entry ol > li, div.career-entry ul > li {
