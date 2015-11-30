@@ -204,12 +204,12 @@ body > footer {
     div.career-entry ul > li::before,
     div.education-entry ol > li::before,
     div.education-entry ul > li::before {
-        width: 19px;
-        height: 19px;
+        width: 20px;
+        height: 20px;
         border-radius: 10px;
         text-align: center;
-        line-height: 20px;
-        margin-left: -38px;
+        line-height: 12px;
+        margin-left: -37px;
         content: "+";
         display: block;
         float: left;
