@@ -285,7 +285,7 @@ body > footer {
     }
 
     body > main > div > section > h2 {
-        font-size: 2em;
+        font-size: 3em !important;
     }
 
     h3.skill-set {
@@ -305,5 +305,9 @@ body > footer {
         float: left;
         text-align: right;
         display: block;
+        
+        width: 3cm;
+        padding-right: 0.2cm;
+        line-height: 0.75cm;
     }
 }
