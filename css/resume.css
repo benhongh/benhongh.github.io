@@ -242,15 +242,24 @@ body > footer {
     }
 }
 
+@media (max-width: 990px) {
+    #skills, #extracurricular, #references {
+        margin-left: 140px;
+    }
+}
+
 @media print {
 
     @page {
         size: portrait;
-        margin: 2cm 1cm 2cm 1cm;
+        margin: 2cm;
     }
 
     body {
         margin: 0cm;
+        font-size: 10pt;
+        
+        color: #3c3c3c;
     }
 
     body > header {
@@ -265,11 +274,15 @@ body > footer {
     aside.bio-info {
         float: right;
         text-align: left;
+        
+        margin-bottom: 0.5cm;
     }
 
     body > main {
         clear: both;
-        padding-top: 2cm;
+        margin-top: 1cm;
+        padding-top: 1.5cm;
+        border-top: 0.5mm solid lightgrey;
     }
 
     span.glyphicon-link::before {
@@ -289,16 +302,30 @@ body > footer {
         content: "";
         display: none;
     }
+    
+    div.career-entry ol,
+    div.career-entry ul,
+    div.education-entry ol,
+    div.education-entry ul {
+        margin: 0.2cm 0cm 0.2cm 0cm;
+
+        list-style: none;
+        padding-left: 0px;
+    }
 
     div.career-entry, div.education-entry {
         page-break-inside: avoid;
+    }
+    
+    p.timeline-item {
+        margin: 0.2cm 0cm 0.2cm 0cm;
     }
 
     body > main > div > section {
         padding-left: 2.5cm;
     }
 
-    #education, #extracurricular {
+    #education, #extracurricular, #skills {
         page-break-inside: avoid;
     }
 
@@ -326,6 +353,10 @@ body > footer {
         
         width: 2.5cm;
         padding-right: 0.2cm;
+        line-height: 0.75cm;
+    }
+    
+    .entry-title {
         line-height: 0.75cm;
     }
     
