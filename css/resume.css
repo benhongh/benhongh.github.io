@@ -360,6 +360,10 @@ body > footer {
         line-height: 0.75cm;
     }
     
+    #skills, #extracurricular, #references {
+        margin-left: 0px;
+    }
+    
     body > footer {
         display: none;
     }
