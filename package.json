@@ -1,0 +1,28 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Hongbin's resume",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benhongh/benhongh.github.io.git"
+  },
+  "keywords": [
+    "Hongbin",
+    "Hu",
+    "resume"
+  ],
+  "author": "Hongbin Hu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benhongh/benhongh.github.io/issues"
+  },
+  "homepage": "https://github.com/benhongh/benhongh.github.io#readme",
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}
