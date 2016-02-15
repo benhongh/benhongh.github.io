@@ -5,19 +5,12 @@ body {
     font-size: 12pt;
 }
 
-.address-unit-number::after, .street-name::after, .suburb::after {
-    content: ", "
-}
-
 main {
     margin-top: 50px;
 }
 
 main section {
     padding: 0px 50px 50px 0px;
-}
-
-main section#career {
 }
 
 main section > h2 {
@@ -113,12 +106,20 @@ body > footer {
     color: black;
 }
 
+.smaller-font {
+    font-size: 0.8em;
+}
+
 @media screen {
     body > header {
         background-color: #065e71;
         color: #ffffff;
         margin: 0px;
         padding: 20px 0px 0px 0px;
+    }
+    
+    .address-unit-number::after, .street-name::after, .suburb::after {
+        content: ", "
     }
 
     body > header a, body > header a:hover {
@@ -235,12 +236,21 @@ body > footer {
         background-color: #ffffff;
         border: 4px solid #065e71;
     }
+    
+    p.referee-contacts {
+        color: #065e71;
+    }
 }
 
 @media print {
 
+    @page {
+        size: portrait;
+        margin: 2cm 1cm 2cm 1cm;
+    }
+
     body {
-        margin: 1cm;
+        margin: 0cm;
     }
 
     body > header {
@@ -254,7 +264,7 @@ body > footer {
 
     aside.bio-info {
         float: right;
-        text-align: right;
+        text-align: left;
     }
 
     body > main {
@@ -265,6 +275,14 @@ body > footer {
     span.glyphicon-link::before {
         content: "";
         display: none;
+    }
+    
+    p.address-line {
+        margin: 0px 0px 0px 20px;
+    }
+    
+    p.address-line:first-child {
+        margin: 0px;
     }
 
     a[href]::after {
@@ -277,10 +295,10 @@ body > footer {
     }
 
     body > main > div > section {
-        padding-left: 3cm;
+        padding-left: 2.5cm;
     }
 
-    #education, #extracurricular, #references {
+    #education, #extracurricular {
         page-break-inside: avoid;
     }
 
@@ -293,7 +311,7 @@ body > footer {
     }
 
     h3.skill-set::before {
-        content: "*";
+        content: "\25CF";
         display: block;
         float: left;
         margin-left: -1cm;
@@ -301,13 +319,17 @@ body > footer {
     }
 
     aside.entry-time {
-        margin-left: -3cm;
+        margin-left: -2.5cm;
         float: left;
         text-align: right;
         display: block;
         
-        width: 3cm;
+        width: 2.5cm;
         padding-right: 0.2cm;
         line-height: 0.75cm;
+    }
+    
+    body > footer {
+        display: none;
     }
 }
