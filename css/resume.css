@@ -243,6 +243,11 @@ body > footer {
 }
 
 @media (max-width: 990px) {
+    
+    body {
+        font-size: 16pt;
+    }
+    
     #skills, #extracurricular, #references {
         margin-left: 140px;
     }
